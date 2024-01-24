@@ -1,0 +1,106 @@
+<html>
+
+  <head>
+    <!-- Client Side - Use HTTPS -->
+    <script>"https:"!==location.protocol&&(location.protocol="https:");</script>
+
+    <title>Hi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- optional fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>* {font-family: 'Roboto', sans-serif;}</style>
+
+	<!-- favicon stuff -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	
+  </head>
+
+  <body style="color:white;background-color:#50607a;font-size:18px;">
+    <div class="container" style="padding:30px;">
+	  <div class="container mx-auto text-center">
+		  <h1 class="animated fadeInDown slow">Hi there!</h1>
+		  <p class="animated fadeInUp delay-1s">This is Floppa. &#10084;</p>
+		  <p>
+			<img width="225px" alt="The Floppa" class="animated fadeInLeft delay-1s" src="/Images/thefloppa.png">
+		  </p>
+	  </div>
+     
+      <!-- Method="GET" means that values are sent via the URL (can be bookmarked) -->
+      <!-- Method="POST" means that values are sent via HTTP headers -->
+      <form method="POST" class="container animated fadeIn delay-2s" style="max-width: 500px;" action="https://drhws.net/webdev/formsubmit.php">
+		<div class="p-2">
+			<label for="ID" class="form-label">ID:</label>
+			<input class="form-control" type="text" name="ID" placeholder="2468" required>
+		</div>
+		<div class="p-2">
+			<label for="firstname" class="form-label">First Name:</label>
+			<input class="form-control" type="text" name="firstname" placeholder="Mr.Floppa" required>
+		</div>
+		<div class="p-2">
+			<label for="phone" class="form-label">Phone #</label>
+			<input class="form-control" type="text" name="phone" placeholder="123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+		</div>
+		<div class="p-2">
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" value="" id="offers">
+			  <label class="form-check-label" for="offers">
+				Get Floppa Offers?
+			  </label>
+			</div>
+		</div>
+		<div class="p-2">
+			<!-- Dropdown -->
+			<select class="form-select" name="favmeal" required>
+				<option value="" selected>Choose...</option>
+				<option value="BT">Breakfast</option>
+				<option value="LT">Lunch</option>
+				<option value="DT">Dinner</option>
+				<option value="ST">Snack</option>
+			</select>
+		</div>
+		<div class="p-2">
+			<label for="password" class="form-label">Password</label>
+			<input class="form-control" type="password" value="********" name="password" required>
+		</div>
+		<div class="p-2">
+			<p>Feed Floppa</p>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="steak" id="steak">
+			  <label class="form-check-label" for="steak">
+				Steak &#129385;
+			  </label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="chicken" id="chicken">
+			  <label class="form-check-label" for="Chicken">
+				Chicken &#128020;
+			  </label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="hashbrown" id="hashbrown">
+			  <label class="form-check-label" for="hashbrown">
+				McDonalds Hashbrown &#127839;
+			  </label>
+			</div>
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="hotdog" id="hotdog">
+			  <label class="form-check-label" for="hotdog">
+				Coscto Hotdog &#127789;
+			  </label>
+			</div>
+		</div>
+        <div class="p-2">
+          <button type="submit" class="animated flipInX delay-2s py-2 px-5 btn btn-dark"><b>Send</b></button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" async defer crossorigin="anonymous"></script>
+</html>
